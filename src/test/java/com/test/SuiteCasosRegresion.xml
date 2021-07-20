@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">  
+    <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+   <test name="ChromeTest1">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="90.0"/>
+        <parameter name="platform" value="Windows 10"/>
+          <classes>
+            <class name="com.test.PassParametersFromxml"/>
+          </classes>
+    </test>
+    <test name="ChromeTest2">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="90.0"/>
+        <parameter name="platform" value="Windows 10"/>
+          <classes>
+            <class name="com.test.PassParametersFromxml"/>
+          </classes>
+    </test>
+    <test name="ChromeTest3">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="90.0"/>
+        <parameter name="platform" value="Windows 10"/>        
+          <classes>
+            <class name="com.test.PassParametersFromxml"/>
+          </classes>
+    </test>
+</suite>
+    
+   
+      
